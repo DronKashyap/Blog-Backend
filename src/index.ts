@@ -44,6 +44,11 @@ app.use("/api/v1/blog/*", async (c, next) => {
   }
 });
 
+// Get / route 
+app.get('/', (c) => {
+  return c.text('Hi there! Backend is running.');
+});
+
 
 // Signup Route
 app.post('/api/v1/signup', async (c) => {
